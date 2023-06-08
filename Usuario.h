@@ -7,7 +7,7 @@ private:
     string pin;
     string tipo_cuenta;
     string track;
-    fstream archivo; //lectura y escritura
+    fstream archivo;
 
 public:
     Usuario();
@@ -16,7 +16,6 @@ public:
     void inicioSesion(string);
     void contrasena(string);
     void creaTracker();
-    void creaArchivo();
     string buscarTracker();
 };
 
