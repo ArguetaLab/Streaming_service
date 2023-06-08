@@ -13,6 +13,7 @@ nombre_U = _nombre_U;
 pin = _pin;
 tipo_cuenta = _tipo_cuenta;
 track = _track;
+
 }
 void Usuario::inicioSesion(string i){
     nombre_U = i;
@@ -30,25 +31,29 @@ void Usuario::creaTracker(){
     track = nombre_U+"/"+pin+"/"+tipo_cuenta;
 }
 
-void Usuario::creaArchivo(){
-archivo.open("baseDatos.txt", ios::app);
-}
-
 string Usuario::buscarTracker(){
     creaTracker();
-    creaArchivo();
-    string mensaje;
+    ifstream archivoLectura("file.txt");
+    ofstream archivoEscritura("file.txt", ios::out | ios::app);
     string linea;
+    bool encontrado = false;
+    string msg;
 
-    while(getline(archivo,linea)){
-        if(linea == track){
-            mensaje = "Usuario encontrado, iniciando sesion...";
-        }
-        else{
-            mensaje = "Usuario no encontrado, creando esta cuenta...";
-            archivo<<track;
+    while(getline(archivoLectura, linea)) {
+        if (linea == track) {
+            encontrado = true;
+            break;
         }
     }
-    archivo.close();
-    return mensaje;
+    if(encontrado) {
+        msg = "Su cuenta ha sido encontrada, iniciando sesion...";
+    }
+    else {
+        archivoEscritura << track;
+        archivoEscritura << "\n";
+        msg = "Cuenta no creada, creando cuenta...";
+    }
+    archivoLectura.close();
+    archivoEscritura.close();
+    return msg;
 }
