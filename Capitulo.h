@@ -9,7 +9,7 @@ public:
     Capitulo();
     Capitulo(string,float);
 
-    void reproducir();
+    string reproducir();
     string getNombre();
 };
 
