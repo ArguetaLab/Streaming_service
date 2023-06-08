@@ -10,11 +10,12 @@ Pelicula::Pelicula(string _name, string _genre, int _rating, string _ID,float _l
 
 string Pelicula::muestraContenido(){
     string mensaje;
-    mensaje = "=========================================== \n+ ID: " + this->getID() + "\n+ Nombre: " + this->getName() + "\n+ Duración: " + to_string(this->getLenght()) + "\n+ Genero: " + this->getGenre() + "\n+ Rating: " + to_string(this->getRating())+"\n";
+    mensaje = "=========================================== \n+ ID: " + getID() + "\n+ Nombre: " + getName() + "\n+ Duración: " + to_string(getLenght()) + "\n+ Genero: " + getGenre() + "\n+ Rating: " + to_string(getRating())+"\n";
     return mensaje;
 }
 string Pelicula::reproducir(){
     string mensaje;
-    mensaje = "Reproduciendo "+this->getName()+"...";
+    mensaje = "Reproduciendo " + getName()+"...";
     return mensaje;
 }
+
