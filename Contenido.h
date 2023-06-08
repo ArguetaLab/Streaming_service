@@ -3,7 +3,7 @@
 using namespace std;
 
 class Contenido{
-private:
+protected:
 string name;
 string genre;
 int rating;
@@ -20,7 +20,8 @@ public:
     int getRating();
     string getID();
     float getLenght();
+
+    friend ostream& operator<<(ostream& cout, Contenido& contenido);
 };
 
 #endif // CONTENIDO_H_INCLUDED
-
