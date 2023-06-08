@@ -16,6 +16,7 @@ lenghtCap = _lenghtCap;
 string Capitulo::getNombre(){
 return nameCap;
 }
-void Capitulo::reproducir(){
-cout<<"Reproduciendo episodio "<<this->getNombre()<<endl;
+string Capitulo::reproducir(){
+string msg = "Reproduciendo episodio "+this->getNombre();
+return msg;
 }
