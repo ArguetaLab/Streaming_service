@@ -5,12 +5,11 @@
 class Serie:public Contenido{
 
 private:
-    vector<Capitulo> vect;
+    vector<Capitulo> EP;
 
 public:
    Serie(string,string,int, string,float, vector<Capitulo> episodios);
    vector<Capitulo> getCapitulos();
-   void reproducir(int episodio);
    string muestraContenido() override;
    string reproducir() override;
 };
