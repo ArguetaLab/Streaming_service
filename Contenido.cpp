@@ -35,3 +35,8 @@ return name;
 int Contenido::getRating(){
 return rating;
 }
+ostream& operator<<(ostream& cout, Contenido& contenido) {
+    cout << contenido.muestraContenido();
+    return cout;
+}
+
