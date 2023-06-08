@@ -6,7 +6,7 @@
 using namespace std;
 
 Serie::Serie(string _ID,string _name,int _rating, string _genre, float _lenght, vector<Capitulo> episodios):Contenido(_ID, _name, _rating, _genre, _lenght){
-vect = episodios;
+EP = episodios;
 }
 string Serie::muestraContenido(){
     string mensaje;
@@ -19,15 +19,6 @@ string Serie::reproducir(){
     return mensaje2;
 }
 vector<Capitulo> Serie::getCapitulos(){
-return vect;
+return EP;
 }
 
-void Serie::reproducir(int episodio){
-    //Esto es para ahorrarnos lineas de código extra, en lugar de poner varios if, solo ponemos un while
-
-    while(episodio < 1 || episodio > sizeof(vect)){
-        cout<<"Esta serie contiene un total de: "<<to_string(sizeof(vect))<<"ingrese el número de episodio que desea ver: ";
-        cin>>episodio;
-    }
-    cout<<"Reproduciendo episodio "<<to_string(episodio)<<endl;
-}
