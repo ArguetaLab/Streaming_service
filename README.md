@@ -1,12 +1,21 @@
-# Streaming_service
-Contexto:
+Contexto
+Durante los últimos años se han llegado a desarrollar plataformas de streaming a bajos 
+precios en los cuales podemos obtener series, películas y en algunos casos video juegos de 
+nuestro agrado. Muchos de estos tienen la tarea difícil de crear su propio contenido para 
+mantener a su público satisfecho.
 
-Durante los últimos años se han llegado a desarollar plataformas de streaming a bajos precios en los cuales podemos obtener series y peliculas de nuestro agrado. Muchos de estos tienen la tarea dificil de crear su propio contenido para mantener a su público satisfecho.
+Propuesta
+Este proyecto consistirá en crear un código capaz de simular un servicio de streaming como 
+lo es Netflix, Disney +, etc. Este tendrá la posibilidad de ver el ID, nombre, duración y género 
+de cada película y capítulo por serie, que estén disponibles en la plataforma. Al igual que el 
+usuario va a poder:
 
-Propuesta:
+• Acceder al catálogo de series, video juegos y películas.
+• Acceder a cada capítulo de una serie específica.
+• Acceder al rating de cada película, video juego y/o capítulo por serie.
 
-Este proyecto consistirá en crear un código capaz de simular un servicio de streaming como lo es Netflix, Disney +, etc. Este tendrá la posibilidad de ver el ID, nombre, duración y género de cada película y capítulo por serie, que estén disponibles en la plataforma.
-Al igual que el usuario va a poder:
-  - acceder al catálogo de series y peículas.
-  - acceder a cada capítulo de una seríe específica.
-  - acceder al rating de cada pelicula y/o capítulo por serie.
+¿Cómo correr el código en el cmd?
+  1) Lo primero que debemos hacer es descargar el .ZIP con todos nuestros archivos 
+  2) Abrimos cmd
+  3) Escribimos: cd "dirección de carpeta donde está el proyecto"
+  4) 
