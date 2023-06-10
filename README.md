@@ -19,7 +19,10 @@ usuario va a poder:
   2) Abrimos cmd
   3) Escribimos: cd "dirección de carpeta donde está el proyecto"
   4) Ya una vez dentro de la carpeta escribimos:
+
      g++ Main_SP.cpp
+
      Con esta instruccion generamos el ejecutable
   6) Con la siguiente instrucción, se ejecuta el programa:
+
      a.exe
