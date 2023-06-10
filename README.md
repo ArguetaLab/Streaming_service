@@ -21,5 +21,5 @@ usuario va a poder:
   4) Ya una vez dentro de la carpeta escribimos:
      g++ Main_SP.cpp
      Con esta instruccion generamos el ejecutable
-  6) Con la siguiente nstrucción, se ejecuta el programa:
+  6) Con la siguiente instrucción, se ejecuta el programa:
      a.exe
