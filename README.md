@@ -14,8 +14,12 @@ usuario va a poder:
 • Acceder a cada capítulo de una serie específica.
 • Acceder al rating de cada película, video juego y/o capítulo por serie.
 
-¿Cómo correr el código en el cmd?
+¿Cómo ejecutar el proyecto?
   1) Lo primero que debemos hacer es descargar el .ZIP con todos nuestros archivos 
   2) Abrimos cmd
   3) Escribimos: cd "dirección de carpeta donde está el proyecto"
-  4) 
+  4) Ya una vez dentro de la carpeta escribimos:
+     g++ Main_SP.cpp
+     Con esta instruccion generamos el ejecutable
+  6) Con la siguiente nstrucción, se ejecuta el programa:
+     a.exe
